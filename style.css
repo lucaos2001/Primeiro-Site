@@ -1,0 +1,61 @@
+body {
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 2.2em;
+    background-color: #FFA3FD;
+    margin: 0;
+}
+header{
+    background-color: #191825;
+    padding: 10px;
+    
+}
+nav .container-fluid a {
+    background-color: #191825;
+    color: white;
+}
+nav .dropdown-menu{
+    background-image:  #191825;
+}
+section{
+    padding: 15px
+}
+footer a{
+    font-size: 25px;
+    color: tomato;
+    padding: 10px;
+    text-decoration: none;
+}
+h9{
+    color: red;
+}
+#produtos .fotos figcaption{
+    text-shadow: 3px 3px 3px #f10a0a;
+    color: black;
+    font-style: bold;
+    font-size: 15px;
+}
+
+.carousel-caption h5{
+    color: yellow;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-style: bold;
+    font-size: 1vw;
+}
+.carousel-caption p{
+    color: yellow;
+    font-style: bold;
+    font-size: 1vw;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+#time .container-fluid{
+    font-size: 100px;
+    padding: 25px;
+}
+iframe{
+    text-align: right;
+    font-size: 100px;
+    color: black;
+    background-image: rgb(253, 10, 213);
+}
