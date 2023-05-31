@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+</head>
+<body>
+  <header class="container-fluid p-2"> 
+        <nav class="navbar navbar-expand-lg ">
+            <div id="navbar1" class="container-fluid">
+            <a class="navbar-brand" href="index.html">Roe's shop</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#produtos">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contatos">Contatos</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+  <div class="container"> 
+    <main>
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4 rounded-circle" src="Images/2.png" alt="" width="90" height="90">
+        <h2>Página de pagamentos</h2>
+        <p class="lead">Após o preenchimento de todos os dados as chaves serão enviadas para o seu email.<br>
+        Obrigado por escolher a Roe's Shop.</p>
+      </div>
+  
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Seu Carrinho</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Mortal Kombat 11</h6>
+                <small class="text-body-secondary">Descrição</small>
+              </div>
+              <span class="text-body-secondary">R$499,99</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Mad Max</h6>
+                <small class="text-body-secondary">Descrição</small>
+              </div>
+              <span class="text-body-secondary">R$39,99</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">LEGO Harry Potter</h6>
+                <small class="text-body-secondary">Descrição</small>
+              </div>
+              <span class="text-body-secondary">R$29,99</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+              <div class="text-success">
+                <h6 class="my-0">Código promocional</h6>
+                <small>ROESFRIEND</small>
+              </div>
+              <span class="text-success">−R$50</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (BRL)</span>
+              <strong>R$518,98</strong>
+            </li>
+          </ul>
+  
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Código promocional">
+              <button type="submit" class="btn btn-secondary">Resgatar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Confirme seus dados</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Requer um nome válido.
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Requer um sobrenome válido.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-body-secondary"></span></label>
+                <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                <div class="invalid-feedback">
+                  Requer um email válido.
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <h4 class="mb-3">pagamento</h4>
+  
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">Cartão de crédito</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Cartão de débito</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="boleto">Boleto</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="pix">Pix</label>
+              </div>
+            </div>
+  
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Nome do cartão</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-body-secondary">Nome completo mostrado no cartão.</small>
+                <div class="invalid-feedback">
+                  O nome do cartão é obrigatório.
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Número do cartão de crédito</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  O número do cartão de crédito é obrigatório.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Validade</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  A data de validade é obrigatória.
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  O CVV é obrigatório
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Confirmar o pagamento</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>  
+        <footer>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <fieldset>
+                <legend id="contatos" class="col text-center"> Contatos
+                    <p>Nossas redes sociais
+                        <a href="https://www.instagram.com">
+                          <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com">
+                          <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com">
+                          <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com">
+                          <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://github.com/lucaos2001">
+                          <i class="bi bi-github"></i>
+                        </a> 
+                    <p>Telefone - 
+                        <h9>
+                          <a href="https://api.whatsapp.com/send?phone=5561940028922">(61) 94002-8922</a>
+                        </h9>
+                        <!--É o funk do yudi que vai dar playstation 2-->
+                    </p>
+                    <p>Endereço - 
+                        <h9>
+                          <a href="https://www.google.com/maps?ll=-15.799049,-47.860769&z=13&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=14394729743272495632">Praça dos Três Poderes - Brasília, DF, 70150-900</a></h9>
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15356.57427038338!2d-47.87827178400657!3d-15.79638211007633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a309ae31de7d3%3A0xc7c45a6f5981ca10!2sPal%C3%A1cio%20do%20Planalto!5e0!3m2!1spt-BR!2sbr!4v1685200134029!5m2!1spt-BR!2sbr" style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+                </legend>
+            </fieldset>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>         
+</body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Produto adicionado ao carrinho</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            O produto foi adicionado ao carrinho com sucesso.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+            <button type="button" class="btn btn-primary">Finalizar compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </html>
+</html>
+
+<!--Made by:Lucas Carvalho
+-->

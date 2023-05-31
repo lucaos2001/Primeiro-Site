@@ -8,33 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R's Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
 </head>
 <body>
     <header class="container-fluid p-2"> 
-        <nav class="navbar navbar-expand-lg teste">
+        <nav class="navbar navbar-expand-lg ">
             <div id="navbar1" class="container-fluid">
-            <a class="navbar-brand" href="#">Roe's shop</a>
+            <a class="navbar-brand" href="index.html">Roe's shop</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Produtos</a>
+                    <a class="nav-link" href="#produtos">Produtos</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Sobre nós
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Quem somos</a></li>
-                      <li><a class="dropdown-item" href="#">Nosso time</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Contatos</a></li>
+                      <li><a class="dropdown-item" href="#time">Quem somos</a></li>
+                      <li><a class="dropdown-item" href="#nossoTime">Nosso time</a></li>
+                      <li><a class="dropdown-item" href="#contatos">Contatos</a></li>
                     </ul>
+                  </li>
+                  <li class="nav-item">
+                   <a class="nav-link" href="carrinho.html"><span class="text-primary"><i class="bi bi-cart"></i></span>
+                    <span class="badge bg-primary rounded-pill">3</span>
+                   </a> 
                   </li>
                 </ul>
               </div>
@@ -49,28 +55,28 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active"  data-bs-interval="2000">
-                <img src="Produtos/dayz.jpg" class="d-block w-100" alt="Imagem de capa do jogo DayZ">
+                <a href="dayz.html"><img src="Produtos/dayz.jpg" class="d-block w-100" alt="Imagem de capa do jogo DayZ"></a>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>DayZ</h5>
                   <p>Em DayZ, a coragem humana resplandece mesmo nas trevas pós-apocalípticas.</p>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
-                <img src="Produtos/mk1.jpg" class="d-block w-100" alt="Imagem de capa do jogo Mortal Kombat 1">
+              <a href="mk1.html"><img src="Produtos/mk1.jpg" class="d-block w-100" alt="Imagem de capa do jogo Mortal Kombat 1"></a>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Mortal Kombat 1</h5>
                   <p>A batalha épica de Mortal Kombat 1 redefine os limites da luta e da determinação humana.</p>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
-                <img src="Produtos/streetfighter.jpg" class="d-block w-100" alt="Imagem de capa do jogo Street Fighter">
+                <a href="streetfighter.html"><img src="Produtos/streetfighter.jpg" class="d-block w-100" alt="Imagem de capa do jogo Street Fighter"></a>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Street Fighter</h5>
                   <p>A luta transcende os limites da imaginação, revelando a essência da supremacia combativa..</p>
                 </div>
               </div>
               <div class="carousel-item active" data-bs-interval="2000">
-                <img src="Produtos/warhamer.jpg" class="d-block w-100" alt="Imagem de capa do jogo Warhammer">
+                <a href="whbt.html"><img src="Produtos/warhamer.jpg" class="d-block w-100" alt="Imagem de capa do jogo Warhammer"></a>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Warhammer</h5>
                   <p>A fúria dos guerreiros é canalizada em um único projétil, trazendo a justiça do universo para a ponta de cada disparo.</p>
@@ -87,7 +93,7 @@
           </div>
     </header>
     <section id="time">
-        <h1 class="container-fluid text-center font-weight-bold">Quem Somos</h1><br>
+        <h1 class="container-fluid text-center font-weight-bold p-5">Quem Somos</h1><br>
         <div class="text-center">
             <figure>
                 <img src="Images/2.png" class="rounded-circle border border-danger" alt="Logotipo Roe's Shop">
@@ -119,12 +125,12 @@
             </ul>
         </p>
         <hr>
-      <section id="time">
-        <legend class="col text-center">Produtos</legend>
+      <section id="produtos">
+        <legend class="col text-center font-weight-bold p-5">Produtos</legend>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
-              <img src="Produtos/skyrim.jpg" class="card-img-top" alt="...">
+              <a href="skyrim.html"><img src="Produtos/skyrim.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title text-mute">Skyrim</h5>
                 <h2 class="card-subtitle text-secondary">R$ 99,99</h2>
@@ -133,12 +139,12 @@
               <div class="card-footer">
                 <small class="text-body-secondary">Até 3x Sem Juros</small>
               </div>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="Produtos/mk11.jpg" class="card-img-top" alt="...">
+              <a href="mk11.html"> <img src="Produtos/mk11.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title text-mute">Mortal Kombat 11</h5>
                 <h2 class="card-subtitle text-secondary">R$ 499,99</h2>
@@ -147,12 +153,12 @@
               <div class="card-footer">
                 <small class="text-body-secondary">Até 5x Sem Juros</small>
               </div>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="Produtos/MadMax.jpg" class="card-img-top" alt="...">
+              <a href="madmax.html"><img src="Produtos/MadMax.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title text-mute">Mad Max</h5>
                 <h2 class="card-subtitle text-secondary">R$ 39,99</h2>
@@ -161,12 +167,12 @@
               <div class="card-footer">
                 <small class="text-body-secondary">Até 3x Sem Juros</small>
               </div>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="Produtos/LegoHP.jpg" class="card-img-top" alt="...">
+              <a href="legohp.html"><img src="Produtos/LegoHP.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title text-mute">LEGO Harry Potter</h5>
                 <h2 class="card-subtitle text-secondary">R$ 29,99</h2>
@@ -175,12 +181,12 @@
               <div class="card-footer">
                 <small class="text-body-secondary">Até 2x Sem Juros</small>
               </div>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="Produtos/HorizonZero.jpg" class="card-img-top" alt="...">
+              <a href="horizon.html"><img src="Produtos/HorizonZero.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title text-mute">Horizon Zero Dawn Complete Edition</h5>
                 <h2 class="card-subtitle text-secondary">R$ 59,99</h2>
@@ -189,12 +195,12 @@
               <div class="card-footer">
                 <small class="text-body-secondary">Até 3x Sem Juros</small>
               </div>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="Produtos/TheEvilWithin.jpg" class="card-img-top" alt="...">
+              <a href="tew2.html"><img src="Produtos/TheEvilWithin.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title text-mute">The Evil Within 2</h5>
                 <h2 class="card-subtitle text-secondary">R$ 30,99</h2>
@@ -205,31 +211,31 @@
               <div class="card-footer">
                 <small class="text-body-secondary">Até 2x Sem Juros</small>
               </div>
-              <a href="#" class="btn btn-primary">Comprar</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Comprar</a>
             </div>
           </div>
         </div>
       </section>
       <hr>
-      <section id="time">
-      <legend class="container-fluid text-center font-weight-bold">Nosso time</legend>
+      <section id="nossoTime">
+      <legend class="container-fluid text-center font-weight-bold p-5">Nosso time</legend>
       <div class="card-group">
         <div class="card bg-secondary-subtle mb-3 border border-black">
-          <img src="Time/Diretores.jpg" class="rounded-circle card-img-top" alt="...">
+          <img src="Time/Diretores.jpg" class="rounded-circle card-img-top" alt="Foto dos nossos diretores">
           <div class="card-body">
             <h5 class="card-title">Diretores</h5>
             <p class="card-text">Além do CEO, uma empresa de venda de jogos é impulsionada pelo talento e liderança dos diretores que desempenham papéis-chave na organização. Esses diretores excepcionais são responsáveis por áreas específicas, como marketing, desenvolvimento de produtos, operações e finanças. Com sua experiência, visão estratégica e compromisso com a excelência, eles contribuem para o sucesso da empresa, trabalhando em conjunto com o CEO para alcançar metas e impulsionar o crescimento.</p>
           </div>
         </div>
         <div class="card bg-secondary-subtle mb-3 border border-black">
-          <img src="Time/pantera.jpg" class="rounded-circle card-img-top" alt="...">
+          <img src="Time/pantera.jpg" class="rounded-circle card-img-top" alt="Foto do(a) CEO da empresa">
           <div class="card-body">
             <h5 class="card-title">CEO</h5>
             <p class="card-text">O CEO de uma empresa de venda de jogos é um líder visionário, apaixonado pelo universo dos jogos. Sua paixão pessoal pelos jogos impulsiona sua liderança, criando um ambiente de trabalho vibrante e criativo. Além disso, o CEO possui um profundo conhecimento do mercado de jogos, acompanhando as tendências e as necessidades dos jogadores. Sua visão abrangente para o futuro da indústria o torna capaz de identificar oportunidades e desenvolver soluções inovadoras.</p>
           </div>
         </div>
         <div class="card bg-secondary-subtle mb-3 border border-black">
-          <img src="Time/galo de calça.jpg" class="rounded-circle card-img-top" alt="...">
+          <img src="Time/galo de calça.jpg" class="rounded-circle card-img-top" alt="Foto do desenvolvedor da empresa">
           <div class="card-body">
             <h5 class="card-title">Dev</h5>
             <p class="card-text">Dentro de uma empresa de venda de jogos, os desenvolvedores são os profissionais responsáveis por transformar conceitos e ideias em realidade virtual. Esses talentosos especialistas em programação e design desempenham um papel essencial na criação de jogos envolventes e inovadores. Com sua expertise técnica e paixão pela criação de experiências interativas, os desenvolvedores impulsionam a indústria dos jogos, oferecendo aos jogadores aventuras cativantes e imersivas.</p>
@@ -241,33 +247,58 @@
     <footer>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <fieldset>
-            <legend class="col text-center"> Contatos
-                <p>Nossas redes sociais
-                    <a href="https://www.instagram.com">
-                        instagram
-                    </a>
-                    <a href="https://www.facebook.com">
-                        facebook
-                    </a>
-                    <a href="https://twitter.com">
-                        Twitter
-                    </a>
-                    <a href="https://www.youtube.com">
-                        Youtube
-                    </a> 
-                </p>
-                <p>Telefone - 
-                    <h9>(61) 94002-8922</h9>
-                    <!--É o funk do yudi que vai dar playstation 2-->
-                </p>
-                <p>Endereço - 
-                    <h9>Praça dos Três Poderes - Brasília, DF, 70150-900</h9>
-                </p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15356.57427038338!2d-47.87827178400657!3d-15.79638211007633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a309ae31de7d3%3A0xc7c45a6f5981ca10!2sPal%C3%A1cio%20do%20Planalto!5e0!3m2!1spt-BR!2sbr!4v1685200134029!5m2!1spt-BR!2sbr" style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <legend id="contatos" class="col text-center"> Contatos
+            <p>Nossas redes sociais
+              <a href="https://www.instagram.com">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://twitter.com">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://www.youtube.com">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="https://github.com/lucaos2001">
+                <i class="bi bi-github"></i>
+             </a> 
+            <p>Telefone - 
+              <h9>
+                 <a href="https://api.whatsapp.com/send?phone=5561940028922">(61) 94002-8922</a>
+              </h9>
+              <!--É o funk do yudi que vai dar playstation 2-->
+            </p>
+            <p>Endereço - 
+              <h9>
+               <a href="https://www.google.com/maps?ll=-15.799049,-47.860769&z=13&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=14394729743272495632">Praça dos Três Poderes - Brasília, DF, 70150-900</a></h9>
+           </p>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15356.57427038338!2d-47.87827178400657!3d-15.79638211007633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a309ae31de7d3%3A0xc7c45a6f5981ca10!2sPal%C3%A1cio%20do%20Planalto!5e0!3m2!1spt-BR!2sbr!4v1685200134029!5m2!1spt-BR!2sbr" style="border:0;width: 100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
             </legend>
         </fieldset>
     </footer>   
 </body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Produto adicionado ao carrinho</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        O produto foi adicionado ao carrinho com sucesso.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+        <a href="carrinho.html" type="button" class="btn btn-primary">Finalizar compra</a>
+      </div>
+    </div>
+  </div>
+</div>
 </html>
+
+<!--Made by:Lucas Carvalho
+-->
